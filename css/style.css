@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: 'Pretendard', sans-serif;
+    background: radial-gradient(ellipse at bottom, #0d0d2b 0%, #000014 100%);
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  .stars, .stars2, .stars3 {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background-repeat: repeat;
+    background-size: contain;
+    z-index: 0;
+    top: -50%;
+    left: -50%;
+    opacity: 0.8;
+  }
+  
+  .stars, .stars2, .stars3 {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: repeat;
+    background-size: contain;
+    z-index: 0;
+    opacity: 0.8;
+  }
+  
+  @keyframes twinkle {
+    from { transform: translateY(0); }
+    to { transform: translateY(-200px); }
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    z-index: 1;
+  }
+  
+  p.description {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #c0c5ff;
+    z-index: 1;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+  }
+  
+  .time-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  select {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #5e6bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #7783ff;
+  }
+  
+  .results {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .time-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  footer {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #999;
+    text-align: center;
+    z-index: 1;
+  }

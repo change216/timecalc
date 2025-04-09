@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>기상 시간 계산기</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>
+
+  <h1>기상 시간 계산기</h1>
+  <p class="description">기상 시간을 선택하면 최적의 수면 시간을 알려드려요</p>
+  <div class="container">
+    <div class="time-select">
+      <select id="hourSelect"></select>
+      시
+      <select id="minuteSelect"></select>
+      분
+    </div>
+    <button onclick="calculateSleepTimes()">언제 자야 할까?</button>
+    <div class="results" id="results"></div>
+  </div>
+  <footer>※ 90분 수면 주기를 기준으로 계산됩니다.</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
